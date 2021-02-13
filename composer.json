@@ -1,0 +1,29 @@
+{
+    "name": "bitfertig/laravel-options",
+    "description": "A package for Laravel to providekey-value-store.",
+    "type": "package",
+    "homepage": "https://github.com/Bitfertig/laravel-options",
+    "keywords": [
+        "key-value-store",
+        "function",
+        "laravel"
+    ],
+    "require": {
+        "php": "^7.3|^8.0"
+    },
+    "autoload": {
+        "files": [
+            "src/helpers.php"
+        ],
+        "psr-4": {
+            
+        }
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Aurelian Hermand",
+            "email": "aurel@hermand.de"
+        }
+    ]
+}
