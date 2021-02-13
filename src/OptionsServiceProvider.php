@@ -12,7 +12,11 @@ class OptionsServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        
+        if ($this->app->runningInConsole()) {
+            $this->publishes([
+                __DIR__.'/../database/migrations' => database_path('migrations'),
+            ], 'migrations');
+        }
     }
 
     /**
@@ -22,5 +26,5 @@ class OptionsServiceProvider extends ServiceProvider
     {
         $this->app->bind('option', \Bitfertig\Options\Option::class);
     }
-    
+
 }

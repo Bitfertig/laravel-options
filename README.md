@@ -4,8 +4,6 @@ A package for Laravel that offers a key-value-store.
 
 ## Install
 
-php artisan migrate
-
 ### Install via Packagist
 
 ...Todo...
@@ -27,6 +25,16 @@ Add the following to ```composer.json```:
     }
 
 }
+```
+
+Add the migration file to your project:
+```bash
+php artisan vendor:publish --provider="Bitfertig\Options\OptionsServiceProvider"
+```
+
+Run the migration file:
+```bash
+php artisan migrate
 ```
 
 
