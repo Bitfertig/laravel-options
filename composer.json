@@ -31,10 +31,7 @@
         "laravel": {
             "providers": [
                 "Bitfertig\\Options\\OptionsServiceProvider"
-            ],
-            "aliases": {
-                "Option": "Bitfertig\\Options\\OptionFacade"
-            }
+            ]
         }
     }
 }
