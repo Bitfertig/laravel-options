@@ -1,6 +1,6 @@
 <?php
 
-use App\Models\Option;
+use Bitfertig\Options\Option;
 if ( !function_exists('option') ) {
     // Getter: option($key)->get($default)
     // Setter: option($key)->set($val)

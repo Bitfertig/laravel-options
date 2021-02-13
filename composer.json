@@ -8,22 +8,33 @@
         "function",
         "laravel"
     ],
-    "require": {
-        "php": "^7.3|^8.0"
-    },
-    "autoload": {
-        "files": [
-            "src/helpers.php"
-        ],
-        "psr-4": {
-            
-        }
-    },
     "license": "MIT",
     "authors": [
         {
             "name": "Aurelian Hermand",
             "email": "aurel@hermand.de"
         }
-    ]
+    ],
+    "require": {
+        "php": "^7.3|^8.0",
+        "illuminate/database": "^6.0|^7.0|^8.0"
+    },
+    "autoload": {
+        "files": [
+            "src/helpers.php"
+        ],
+        "psr-4": {
+            "Bitfertig\\Options\\": "src"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Bitfertig\\Options\\OptionsServiceProvider"
+            ],
+            "aliases": {
+                "Option": "Bitfertig\\Options\\OptionFacade"
+            }
+        }
+    }
 }

@@ -4,6 +4,8 @@ A package for Laravel that offers a key-value-store.
 
 ## Install
 
+php artisan migrate
+
 ### Install via Packagist
 
 ...Todo...
