@@ -1,1 +1,1 @@
-# laravel-options
+# bitfertig/laravel-options
